@@ -1,1 +1,0 @@
-<?php jigoshop_get_template( 'jigoshop/loop-shop.php' ); ?>

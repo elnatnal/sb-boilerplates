@@ -1,0 +1,63 @@
+// Misc.
+// ================================================== //
+
+.success, .warning, .note {
+  padding: 1em;
+  padding-left: 3.4em;
+}
+
+.success {
+  background: lighten($success, 40%) url("images/icons/success.png") 14px 50% no-repeat;
+  border: 1px solid lighten($success, 10%); 
+  color: darken($success, 20%);
+  text-shadow: 0 1px 1px #fff; 
+}
+
+.warning {
+  background: lighten($caution, 40%) url("images/icons/caution.png") 14px 50% no-repeat;
+  border: 1px solid lighten($caution, 10%); 
+  color: darken($caution, 30%);
+  text-shadow: 0 1px 1px #fff; 
+}
+
+.note {
+  background: lighten($note, 30%) url("images/icons/note.png") 14px 50% no-repeat;
+  border: 1px solid lighten($note, 10%); 
+  color: darken($note, 35%);
+  text-shadow: 0 1px 1px #fff
+}
+
+
+
+// Buttons
+// ================================================== //
+
+.button, button, input[type="submit"], input[type="reset"], input[type="button"] {
+
+	background: #373636; /* Old browsers */
+	border: 0;
+	color: #fff;
+	cursor: pointer;
+	font: normal 1.2857em/2.143em $century;
+	margin-bottom: 20px;
+	padding: 0 3.57142857142857em;
+	text-decoration: none;
+  text-transform: uppercase;
+
+  @include inline-block;
+  
+  &:hover {
+		background: #444;
+  }
+
+  &:active {
+		background: #333; /* Old browsers */
+  }
+}
+
+/* Fix for odd Mozilla border & padding issues */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}

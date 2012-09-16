@@ -1,0 +1,38 @@
+// Navigation
+// ================================================== //
+
+.menu, nav {
+
+    margin-top: 3px;
+
+    li {
+        position: relative; 
+        top: 5px;
+        line-height: 15px;
+        margin-left: 10px;
+        
+        @include inline-block;
+
+        a {
+            color: #333;
+            margin: 0 0.45em;
+            padding: 0.2em 0.5em;
+            text-transform: uppercase;
+
+            &:link, &:visited {
+                color: #222;
+            }
+            
+            &:hover {
+                color: $smashing-pink;
+            }
+
+        }
+        
+        &.current-menu-item a, &.current_page_item a {
+            background: #373636;
+            color:#fff;
+        }
+
+    }
+}

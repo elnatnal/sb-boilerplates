@@ -1,0 +1,43 @@
+@import "compass/layout/grid-background";
+
+
+
+// Variables
+// ================================================== /
+
+// Colors
+// -------------------------------------------------- //
+
+$smashing-pink : #FD0752;
+
+$success       : #7CCA1A;
+$caution       : #E3BC00;
+$note          : #5AAECE;
+
+// Type
+// -------------------------------------------------- //
+
+$body_copy : 'Open Sans', sans-serif;
+$mono      :  Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+$serif     :  "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
+
+$display   : 'adelle', sans-serif;
+$century   : "Century Gothic", sans-serif;
+$gotham    : "Gotham", $century;
+
+
+// Layout
+// -------------------------------------------------- //
+
+$width: 995;
+
+// The Grid
+$gutter        : 14px;
+$column-width  : (995 - ($gutter * 3) ) / 4;
+
+// Grid Helper
+$grid-background-total-columns : 4;
+$grid-background-column-width  : $column-width;
+$grid-background-gutter-width  : $gutter;
+$grid-background-column-color  : rgba(255,0,0,0.1);
+$grid-background-baseline-color: rgba(100,0,0,0.1);

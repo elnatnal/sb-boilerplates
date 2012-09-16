@@ -1,0 +1,170 @@
+// The Portfolio
+// -------------------------------------------------- //
+
+.page-template-template-portfolio-php [role="content"] {
+  
+  h3 {
+    font-size:1.15em;
+    margin-bottom: 5px;
+    margin-top: 20px;
+
+    &.title {
+      text-transform: uppercase;
+      margin: 0 0 10px;
+      border-bottom: 1px solid #d9d9d9;
+      padding-bottom: 20px;
+
+    }
+  }
+  
+  p, a {
+    font: normal 1em/1.5em $century;
+  }
+  
+
+  // The Toggle
+  // Hides text inside until opened via javascript
+  // -------------------------------------------------- //
+
+  header .toggle .body {
+    font: normal 1.25em/1.75em $century;
+    height: 0;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .toggle { 
+    
+    .body {
+      height: 0;
+      overflow: hidden;
+      position: relative;
+    }
+    
+    a.toggler {
+      color: #2C2B2B;
+      cursor: pointer;
+      display: block;
+      margin-bottom: -20px;
+      position: relative;
+      text-align: right;
+      text-transform: lowercase;
+      top: -7px;
+      
+      em {
+        color: $smashing-pink;
+      }
+
+    }
+  }
+
+
+  // An individual work:
+  // -------------------------------------------------- //
+
+  article {
+
+    border-bottom: 1px solid #DFDFDF;
+    clear: left;
+    padding: 0 0 24px;
+    margin: 0 auto 42px;
+    position: relative;
+    overflow: hidden;
+
+    figure {
+
+      min-height: 500px;
+      width: 60%;
+      float: left;
+
+      img {
+        display: none;
+        position: relative;
+        margin: 0 auto;
+        
+        &.focus {
+          display: block;
+        }
+      }
+    }
+    
+    .toggle {
+      border-bottom: 1px solid #d9d9d9;
+      padding-bottom: 10px;
+
+      .body {
+        height: 195px;
+        padding: 0;
+      }
+
+      a.toggler {
+        margin: 10px 0 0;
+        position: static;
+      }
+    }
+
+    .solo {
+      border-bottom: 1px solid #d9d9d9;
+      padding-bottom: 17px;
+    }
+
+    section {
+      clear: right;
+      float: right;
+      width: 36.5%;
+      
+      .link {
+        border-bottom: 1px solid #d9d9d9;
+        padding-bottom: 20px;
+      }
+      
+      
+      ul {
+        padding: 0;
+      }
+      
+    }
+    
+    ul li {
+      
+      margin: 0 15px 0 0;
+      @include inline-block;
+      
+      a {
+        display: block;
+        background: url("images/icons/spritesheet_portfolio.gif") 100% 50% no-repeat;;
+        text-indent: -9999px;
+        margin: 0;
+        padding: 0;
+        position: static;
+        width: 13px;
+        height: 13px;
+        
+        &.selected, &:hover {
+          background-position: 0 0;
+        }
+      }
+    }
+
+    
+  }
+
+  footer {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+  }
+  
+  button {
+    color: #fff;
+    cursor: pointer;
+    background: #BCBCBC;
+    border: 0;
+    font: normal 1em/1em "Century Gothic", sans-serif;
+    padding: 7px 15px;
+    @include border-radius(0);
+    margin: 0 0 -1px;
+  }
+
+}

@@ -1,0 +1,80 @@
+// Sidebars
+// ================================================== //
+
+#sidebar {
+  margin: 40px 0 0 -4px;
+  padding: 9px 0;
+  position: relative;
+  float: left;
+  width: 28.5%;
+  background:rgba(255,255,255,.7);
+  opacity:.8;
+  -webkit-transition: background .15s ease-in-out,opacity .15s ease-in-out;
+  -moz-transition: background .15s ease-in-out,opacity .15s ease-in-out;
+  -ms-transition: background .15s ease-in-out,opacity .15s ease-in-out;
+  -o-transition: background .15s ease-in-out,opacity .15s ease-in-out;
+  transition: background .15s ease-in-out,opacity .15s ease-in-out;
+  font-size:75%;
+    
+  .widget {
+    border-bottom: 10px solid #F0F0F0;
+    margin: 1em 2em 28px;
+    padding-bottom: 21px;
+
+    &:last-child {
+      border: 0;
+    }
+    
+    h2 { 
+      font-size: 1.29em;
+      margin-bottom: 21px;
+      text-transform: uppercase;
+    }
+    
+    ul {
+      margin: 0;
+      list-style: none;
+      padding: 0;
+      
+      li {
+        line-height: 1.5empx;
+        a {
+          color: $smashing_pink;
+          font-size: 1.29em;
+          text-transform: uppercase;
+          
+          &:hover {
+            color: lighten($smashing_pink, 15%);
+          }
+
+          &:active {
+            color: lighten($smashing_pink, 5%);
+          }
+        }
+      }
+    }
+  }
+
+  .sidebar-social {
+    margin: 55px 0 0px 0;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+
+    a {
+      max-width: 25%;
+      @include inline-block;
+    }
+    
+    a.facebook{
+      max-width:15% !important;
+    }
+
+  }
+
+}
+
+#sidebar:hover, #sidebar:active, #sidebar:focus{
+  background:rgba(255,255,255,1);
+  opacity:1;
+}

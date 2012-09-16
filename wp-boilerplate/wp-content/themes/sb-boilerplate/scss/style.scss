@@ -1,0 +1,48 @@
+/* 
+ * Theme Name: Smashing Boxes Wordpress Boilerplate
+ * Theme URI: http://www.smashingboxes.com
+ * Author: Jonathan Stephens
+ */
+
+// -------------------------------------------------- //
+//- Name    : style.scss
+//- Purpose : To provide a root file for a Wordpress site where the css will be compiled in one, primary stylesheet.
+//-
+//- Author: Jonathan Stephens, Smashing Boxes
+// -------------------------------------------------- //
+
+@import "compass/reset";
+@import "compass";
+
+// -------------------------------------------------- //
+@import "globals/variables";
+@import "globals/utilities";
+// -------------------------------------------------- //
+
+// Universal Components
+@import "components/type";
+@import "components/main";
+@import "components/navigation";
+@import "components/sidebar";
+@import "components/footer";
+@import "components/forms";
+@import "components/lists";
+@import "components/misc";
+
+// Slideshow
+@import "components/slider";
+@import "components/slides";
+
+// Individual sections
+@import "sections/home";
+@import "sections/blog";
+@import "sections/portfolio";
+@import "sections/parent_child";
+@import "sections/contact";
+
+// Wordpress Specifics
+@import "components/wordpress";
+@import "components/comments";
+
+// Responsive Design
+@import "components/media";

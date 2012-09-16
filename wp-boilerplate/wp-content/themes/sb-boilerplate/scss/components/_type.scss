@@ -1,0 +1,248 @@
+// -------------------------------------------------- //
+//- Name      : Type.scss
+//- Purpose : To add structure
+//-
+//- Author: Nate Hunzaker, Smashing Boxes
+// -------------------------------------------------- //
+
+
+/* Global */
+
+*::selection {
+    background: lighten($smashing_pink, 10%);
+    color: #fff;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.45);
+}
+
+body {
+    color: #222;
+    font: normal 87.5%/1.618em $body_copy; 
+    font-weight: 500;
+    text-shadow: 0 0 1px #fefefe;
+    
+    -moz-hyphens: auto; 
+    -webkit-hyphens: auto; 
+    hyphens: auto;
+}
+
+.logo {
+    font-family: $body_copy;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #dfdfdf;
+    margin: 10px 0 20px;
+}
+
+/**********************************
+ * 6) Text - Headings             *
+ **********************************/
+
+/* Based on a modular scale of 16/14, using the golden ratio */
+
+h1, h2, h3, h4, h5, h6 { 
+    color: #333;
+    font: 600 1em/1.2em $body_copy;
+    margin-bottom: 1em;
+    letter-spacing: -0.05em;
+    text-shadow: 0 1px 0 #fff, 0 0 3px #efefef; 
+    
+    a {
+        color: #222;
+        
+        &:hover {
+            color: lighten($smashing_pink, 15%);
+        }
+
+        &:active, &:focus {
+            color: lighten($smashing_pink, 5%);
+        }
+    }
+}
+
+h1 {
+    font-size: 2.74em;
+}
+
+h2 {
+    font-size: 1.849em;   
+    font-weight: 600;   
+}
+
+h3 {
+    font-size: 1.629em;
+    margin-top: 1.925em;
+    margin-bottom: 0.830em;
+    line-height: 1em;
+}
+
+h4{
+    font-size: 1.143em; 
+    letter-spacing: 0;
+}
+
+h5 {
+    font-size: 1em;
+}
+
+h6 {
+    font-size: 0.875em;
+}
+
+
+/**********************************
+ * 7) Text - Body                 *
+ **********************************/
+
+a { 
+
+    color: $smashing-pink;
+    text-decoration: none; 
+    
+    &:hover {
+        color: lighten($smashing-pink, 15%);
+    }
+
+    &:active {
+        color: lighten($smashing-pink, 3%);
+    }    
+    
+    &:focus {
+        outline: none;
+    }
+
+    &.link {
+        display: block;
+        margin-bottom: 20px;
+    }
+    
+}
+
+
+blockquote { 
+    clear: both;
+    font-size: 1.429em;
+    margin: 42px 0 0 0; 
+    overflow: hidden;
+    letter-spacing: -0.05em;
+    
+    hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    
+    p {
+        color: #555;
+        line-height: 2.10em;
+        margin-top: -6px;
+        margin-bottom: 1.25em;
+        
+        &:last-child {
+            margin-bottom: 28px;
+        }
+    }
+    
+    em, i, strong {
+        color: #333;
+        font-weight: 600;
+    }
+}
+
+code { 
+    background: #eee;
+    border: 1px solid #d9d9d9;
+    font-family: $mono; 
+    padding: 2px 5px;
+    text-shadow: 0 1px 0 #fff;
+
+    @include border-radius(4px);
+}
+
+pre {
+    background: #eee;
+    border-left: 4px solid #d9d9d9;
+    line-height: 2.2em;
+    margin-bottom: 2em;
+    padding: 15px;
+    overflow-x: scroll;
+
+    code {
+        background: transparent;
+        display: block;
+        padding: 0;
+        @include border-radius(0);
+        border: 0;
+    }
+}
+
+b, strong {
+    font-weight: bold;
+}
+
+i, em {
+    font-style: italic;
+}
+
+p { 
+    color: #333;
+    line-height: 1.5em;
+    margin: 0 0 1.5em 0;
+}
+
+small { 
+    font-family: $display;
+    font-size: 0.883em; 
+}
+
+sub {
+    vertical-align: middle;
+    position: relative;
+    top: 4px;
+}
+
+// Specifics
+
+.home blockquote {
+    font-family: "Century Gothic";
+    font-size: 1.7em;
+    font-weight: 300;
+    border: 1px solid #D9D9D9;
+    border-width: 1px 0;
+    padding: 0.6em 0.5em;
+    line-height: 1.35em;
+    letter-spacing: 0;
+
+    em {
+        color: $smashing-pink;
+        font-weight: 300;
+        font-style: normal;
+    }
+}
+
+header {
+    
+    h1, h2 {
+      font: normal 3em/1em $display;
+      margin: 0;
+    }
+    
+    h3,h4,h5,h6 {
+        font-family: $body-copy;
+    }
+
+}
+
+section .content .title, article .content .title {
+    line-height: 1em;
+    margin-bottom: 1em;
+}
+
+// Article Styles
+
+article.post {
+  
+  h1,h2,h3,h4,h5,h6 {
+    clear: both;
+  }
+
+}

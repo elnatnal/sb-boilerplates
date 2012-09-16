@@ -1,0 +1,97 @@
+
+// The Contact Page
+// -------------------------------------------------- //
+
+.page-template-default [role="content"] {
+
+  .vcard h3 {
+    border-bottom: 1px solid #D9D9D9;
+    padding-bottom: 0.5em;
+    margin-bottom: 0.75em;
+    width: 90%;
+  }
+
+}
+
+.page-template-default [role="content"], .page-template-template-contact-php [role="content"] {
+
+  width: 100%;
+  padding-top: 40px;
+  
+  #smashing_map {
+    width: 100%;
+    height: 300px;
+    
+    img {
+      max-width: none;
+    }
+
+  }
+
+  form, .content {
+    margin-top: 43px;
+    width: 60%;
+    float: right;
+  }
+
+  // The vcard
+  // http://microformats.org/wiki/hcard
+  // -------------------------------------------------- //
+
+  .vcard {
+    float: left;
+    font-family: $century;
+    padding-bottom: 10px;
+    width: 37%;
+    
+    h3 {
+      font-size: 3em;
+      font-family: $display;
+      font-weight: normal;
+      margin-top: 0.98em;
+    }
+    
+    h4 {
+      border-bottom: 1px solid #dfdfdf;
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+
+    .org {
+      display: none;
+    }
+
+    .adr, .tel {
+      background: transparent url("images/icons/pink/location.png") 0 0 no-repeat;
+      padding-left: 30px;
+      margin: 0 0 10px 12px;
+
+      p {
+        margin: 0;
+      }
+    }
+
+    .tel {
+      background: transparent url("images/icons/pink/phone.png") 0 50% no-repeat;
+    }
+
+    .tel .type {
+      display: none;
+    }
+
+
+    .social {
+      border-top: 1px solid #dfdfdf;
+      margin-top: 15px;
+      padding-top: 25px;
+      
+      a {
+        max-width: 25%;
+        @include inline-block();
+      }
+      
+    }
+  }
+
+}

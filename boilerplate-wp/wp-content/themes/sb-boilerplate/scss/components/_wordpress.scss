@@ -1,0 +1,36 @@
+// ---------------------------------------------------------------------------------------------------- //
+//- Name      : Wordpress.scss
+//- Purpose : To add Wordpress specific styles
+//-
+//- Author: Nate Hunzaker, Smashing Boxes
+// ---------------------------------------------------------------------------------------------------- //
+
+
+.aligncenter {
+    text-align: center;
+    display: block;
+    margin: 1em auto;
+}
+
+.alignright {
+    clear: right;
+    float: right;
+    margin-left: 1em;
+    margin-bottom: 1em;
+}
+
+.alignleft {
+    clear: left;
+    float: left;
+    margin-right: 1em;
+    margin-bottom: 1em;
+}
+
+
+.wp-caption-text {
+    color: $smashing-pink;
+    font-style: italic;
+    font-weight: 100;
+    text-align: center;
+    text-transform: uppercase;
+}

@@ -1,0 +1,40 @@
+// List Styles
+// -------------------------------------------------- //
+
+ol, ul {
+  list-style: decimal;
+  padding: 0 0 0 3em;
+  margin-bottom: 1.5em;
+}
+
+ul {
+  list-style: bullet;
+}
+
+li {
+  margin-bottom: 0.5em;
+}
+
+// The definition list
+dl {
+  margin-bottom: 1.5em;
+  @include clearfix();
+}
+
+dt {
+  clear: left;
+  float: left;
+  font-weight: bold;
+}
+
+dd {
+  float: left;
+  margin-left: 1em;
+}
+
+
+// Special cases
+nav ul, nav ol, .menu {
+    padding: 0;
+    list-style: none;
+}

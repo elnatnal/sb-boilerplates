@@ -1,0 +1,170 @@
+// The Blog Page
+// ================================================== //
+
+// Blog Titles
+.title {
+  font-size: 3em;
+  line-height: 1.2em;
+  margin-bottom: 1em;
+}
+
+.blog, .archive, .single-post {
+  
+  header {
+    border-top: 0;
+  }
+  
+  nav {
+    
+    &.bottom {
+      border-top: 1px solid #d9d9d9;
+      padding: 20px;
+    }
+    
+    a {
+      font: normal 1.286em/2.143em "Century Gothic", sans-serif;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    
+  }
+
+  // Older and Newer Post links
+  .navigation {
+    
+    @include clearfix;
+
+    .next-posts {
+      float: left;
+    }
+
+    .prev-posts {
+      float: right;
+    }
+
+  }
+
+  section[role="content"] {
+    background: white;
+    margin-top: 40px;
+    min-height: 70px;
+    padding-bottom: 2px;
+    float: left;
+    width: 70%;
+    clear: left;
+    margin-right: 14px;
+  }
+
+  article.post {
+    
+    margin: 0 2.5em 68px;
+    position: relative;
+    
+    p{
+      line-height:1.6em;
+    }
+    
+    .meta {
+      color: $smashing_pink;
+      margin: 26px 0em 1.15em;
+      text-transform: uppercase;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      max-width: 70%;
+    }
+
+    time {
+      position: absolute;
+      top: 0;
+      right: 1em;
+    }
+
+    .wp-post-image {
+      float: left;
+      height: auto;
+      margin: 0 20px 10px 0;
+      max-width: 150px;
+    }
+
+    .content {
+      
+      margin: 0 0 36px;
+      
+      .meta {
+        padding-bottom: 0px;
+      }
+
+    }
+
+    footer {
+
+      background :#f0f0f0;
+      margin: 2em 0;
+      position: relative;
+      text-transform: uppercase;
+      
+      p {
+        padding: 4px 2em 11px;
+
+        // A hack until we have more control over google+ buttons
+        div {
+          position: relative;
+          top: 6px;
+        }
+      }
+
+      .twitter-share-button {
+        top: 6px;
+        position: relative;
+      }
+      
+      .comments-link {
+        color: #2c2b2b;
+        font-family: "Century Gothic", sans-serif;
+        position: absolute;
+        right: 2em;
+        top: 10px;
+      }
+    }
+
+    #footer {
+      clear: both;
+    }
+
+  }
+
+  #comments {
+    font-size: 2em;
+    margin-bottom: 1em;
+  }
+
+  .commentlist, .children {
+    list-style: none;
+  }
+
+  #respond {
+
+    border-top: 1px solid #f0f0f0;
+    padding: 32px 0 0;
+    width: 98%;
+
+    @extend .clearfix;
+
+    form div {
+      margin-bottom: 5px;
+    }
+  }
+}
+
+.blog .post p.by-line{
+  padding-bottom: 15px;
+  margin-top:-20px;
+}
+
+.post footer span iframe{
+  height:20px;
+  width:100px;
+  margin-bottom:-6px;
+}
+

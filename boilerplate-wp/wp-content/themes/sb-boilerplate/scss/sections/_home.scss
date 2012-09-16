@@ -1,0 +1,69 @@
+// The home page
+// -------------------------------------------------- //
+
+body.home {
+
+  #page-wrap {
+    margin: 0 auto;
+    width: 100%;
+  }
+  
+  #header {
+    border-bottom: 0;
+    margin-bottom: 433px;
+  }
+
+  #header, [role="content"], .callout, #footer, .home-clients, hr {
+    display: block;
+    width: 995px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  blockquote{
+    border-top:none;
+    margin-top:-21px;
+    font-family:$display;
+    text-align:center;
+  }
+
+  article.post {
+
+    background: #fff;
+    clear: none;
+    min-height: 332px;
+    float: left;
+    margin: 20px 0 16px 10px;
+    padding: 15px;
+    position: relative;
+    width: 208px;
+    
+    &:first-child {
+      margin-left: 0;
+    }
+    
+    p.meta {
+      line-height: 20px;
+      margin: 0 0 1px;
+    }
+
+
+    h2 {
+      margin-top: 5px;
+      font-size: 1.549em;
+    }
+
+    footer {
+      position: absolute;
+      bottom: 13px;
+      width: 87%;
+      
+      p {
+        background: transparent url("images/icons/plus.png") 100% 50% no-repeat;
+        margin: 0;
+        font-size: 0.875em;
+        width: 100%;
+      }
+    }
+  }
+}

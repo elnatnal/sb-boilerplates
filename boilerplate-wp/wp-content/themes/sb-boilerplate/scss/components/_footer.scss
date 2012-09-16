@@ -1,0 +1,23 @@
+// The Footer
+// ================================================== //
+
+#footer {}
+
+.footer-social {
+
+  li {
+    @include inline-block();    
+    list-style: none;
+    margin: 0;
+
+    a {
+      @include inline-block;
+    }
+  }
+}
+
+#menu-footer-nav {
+  li {}
+  a {}
+  li.current-menu-item a, li.current_page_item a {}
+}

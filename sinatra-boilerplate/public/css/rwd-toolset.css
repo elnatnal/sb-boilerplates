@@ -1,0 +1,49 @@
+/* RWD Toolset */
+#calc-form{font-family:Arial, Helvetica, sans-serif; position:relative; bottom:0; background:#000; color:#fff; width:100%;height:300px;}
+#rwd-toolset{padding:10px 1em; }
+#rwd-main a{color:#fff; display:block; font-weight:bold; text-decoration:none;}
+#rwd-calculator, #rwd-calculator li{list-style:none; margin:0; padding:0;}
+
+#rwd-main{float:left; width:180px;}
+
+#rwd-calculator{ float:left;}
+#rwd-calculator li{float:left; padding:0 12px 0 0;}
+
+#rwdTarget, #rwdContext, #rwdResult{display:block; height:20px; line-height:20px;}
+#rwdTarget, #rwdContext{width:85px;}
+#rwdResult{width:200px;}
+.submit-container{position:relative; height:49px;}
+#rwd-calulator-btn{position:absolute; bottom:0; background:#666; color:#fff; border:1px solid #000; height:26px; padding:3px 5px; font-weight:bold;}
+#rwd-calulator-btn:hover{background:#999; cursor:pointer; cursor:hand;}
+
+#calc-options{float:right; padding:0; width:100px; overflow:hidden;}
+#resultsInPercent{float:left;}
+#resultsInEMs{float:right;}
+
+#rwd-tgl-btn{display:block;background:#000;color:#fff;width:150px;height:25px;line-height:25px;position:absolute;right:155px;top:-25px;text-decoration:none;text-align:center;}
+#rwd-tgl-btn:hover{text-decoration:underline;}
+.hideRWD-toolset:before{content:"Hide RWD Toolset";}
+.showRWD-toolset:before{content:"Show RWD Toolset";}
+
+#calc-tgl-btn{display:block;background:#000;color:#fff;width:150px;height:25px;line-height:25px;position:absolute;right:0;top:-25px;text-decoration:none;text-align:center;}
+#cacl-tgl-btn:hover{text-decoration:underline;}
+.hideCalc:before{content:"Hide Calculator";}
+.showCalc:before{content:"Show Calculator";}
+
+@media all and (max-width:920px) {
+	#rwd-calculator{clear:left; padding:20px 0 0 0;}
+}
+
+@media all and (max-width:564px) {
+	#rwd-calculator li.results-container {padding:0;}
+	.submit-container{clear:left;}
+}
+
+@media all and (max-width:481px) {
+	#rwd-calculator li{display:block;float:none;}
+	#rwd-calculator li.calc-symbol{padding:5px 0 0 40px;}
+}
+
+@media all and (max-width:313px){
+	#calc-options{clear:left; float:left; padding:25px 0 20px 0;}
+}

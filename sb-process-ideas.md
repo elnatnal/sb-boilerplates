@@ -16,6 +16,7 @@ _After wireframes/prototypes are approved, the process branches into two stages_
 * Keep client in loop and a part of process. Think more coworker or partner in the project, not as the "client"
 * show on different deliverables, perhaps. i.e. each page? each section? each component? Probably not component, but you get my drift. It will be different for each project.
 * Feedback loop during design. Complex interactions take to dev's and talk about possibilities.
+* As type is designed, update typekit. On site list use the following urls: *.site, *.phpfogapp.com, *.herokuapp.com, localhost
 - FEDevelopment
 * Take wireframes and start building in appropriate CMS (usually almost always is one there)
 * Clean code, start building all components. As design process and hands off grids, fonts, etc. implement. Communication and collaboration between dev/design is crucial.
